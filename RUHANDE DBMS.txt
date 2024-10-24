@@ -1,0 +1,251 @@
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 12
+Server version: 8.3.0 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> create database RUHANDE;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> USE RUHANDE;
+Database changed
+mysql> CREATE TABLE NGOMA(ID INT(18),FNAME CHAR(16),LNAME CHAR(8),PROVINCE CHAR(15),DISTRICT CHAR(15),SECTOR CHAR(15),CELL CHAR(13),EMAIL CHAR(14),TELEPHONE INT(12));
+Query OK, 0 rows affected, 2 warnings (0.03 sec)
+
+mysql> INSERT INTO NGOMA VALUES('1973468343598932','UWERA','Venancie','EASTERN','NYAGATARE','KARANGAZI','GURAYO','uweraven@gmail.com','0789945673');
+Query OK, 1 row affected, 2 warnings (0.01 sec)
+
+mysql> select *from NGOMA;
++------------+-------+----------+----------+-----------+-----------+--------+----------------+-----------+
+| ID         | FNAME | LNAME    | PROVINCE | DISTRICT  | SECTOR    | CELL   | EMAIL          | TELEPHONE |
++------------+-------+----------+----------+-----------+-----------+--------+----------------+-----------+
+| 2147483647 | UWERA | Venancie | EASTERN  | NYAGATARE | KARANGAZI | GURAYO | uweraven@gmail | 789945673 |
++------------+-------+----------+----------+-----------+-----------+--------+----------------+-----------+
+1 row in set (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('1983468344758932','NZABANDUBAKA','Dendo','NOTHERN','MUSANZE','GUTERO','KIGERO',nzabandubakade@gmail.com','0795434673');
+    '> INSERT INTO NGOMA VALUES('1983468344758932','NZABANDUBAKA','Dendo','NOTHERN','MUSANZE','GUTERO','KIGERO',nzabandubakade@gmail.com','0795434673');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@gmail.com','0795434673');
+INSERT INTO NGOMA VALUES('1983468344758932','NZABANDU' at line 1
+mysql> INSERT INTO NGOMA VALUES('1983468344758932','NZABANDUBAKA','Dendo','NOTHERN','MUSANZE','GUTERO','KIGERO','nzabandubakade@gmail.com','0795434673');
+Query OK, 1 row affected, 2 warnings (0.01 sec)
+
+mysql> select *from NGOMA;
++------------+--------------+----------+----------+-----------+-----------+--------+----------------+-----------+
+| ID         | FNAME        | LNAME    | PROVINCE | DISTRICT  | SECTOR    | CELL   | EMAIL          | TELEPHONE |
++------------+--------------+----------+----------+-----------+-----------+--------+----------------+-----------+
+| 2147483647 | UWERA        | Venancie | EASTERN  | NYAGATARE | KARANGAZI | GURAYO | uweraven@gmail | 789945673 |
+| 2147483647 | NZABANDUBAKA | Dendo    | NOTHERN  | MUSANZE   | GUTERO    | KIGERO | nzabandubakade | 795434673 |
++------------+--------------+----------+----------+-----------+-----------+--------+----------------+-----------+
+2 rows in set (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('1963468343598932','ZAKAYO','Nyenye','WESTERN','RUSIZI','BUGARAMA','GITISI','zakayonyenye@gmail.com','0787345673');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> select *from NGOMA;
++------------+--------------+----------+----------+-----------+-----------+--------+----------------+-----------+
+| ID         | FNAME        | LNAME    | PROVINCE | DISTRICT  | SECTOR    | CELL   | EMAIL          | TELEPHONE |
++------------+--------------+----------+----------+-----------+-----------+--------+----------------+-----------+
+| 2147483647 | UWERA        | Venancie | EASTERN  | NYAGATARE | KARANGAZI | GURAYO | uweraven@gmail | 789945673 |
+| 2147483647 | NZABANDUBAKA | Dendo    | NOTHERN  | MUSANZE   | GUTERO    | KIGERO | nzabandubakade | 795434673 |
+| 2147483647 | ZAKAYO       | Nyenye   | WESTERN  | RUSIZI    | BUGARAMA  | GITISI | zakayonyenye@g | 787345673 |
++------------+--------------+----------+----------+-----------+-----------+--------+----------------+-----------+
+3 rows in set (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('1953468344758932','MAFI','Nicos','NOTHERN','BURERA','GACUBI','MUTIBA','mafinicos@gmail.com','0798034673');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> select *from NGOMA;
++------------+--------------+----------+----------+-----------+-----------+--------+----------------+-----------+
+| ID         | FNAME        | LNAME    | PROVINCE | DISTRICT  | SECTOR    | CELL   | EMAIL          | TELEPHONE |
++------------+--------------+----------+----------+-----------+-----------+--------+----------------+-----------+
+| 2147483647 | UWERA        | Venancie | EASTERN  | NYAGATARE | KARANGAZI | GURAYO | uweraven@gmail | 789945673 |
+| 2147483647 | NZABANDUBAKA | Dendo    | NOTHERN  | MUSANZE   | GUTERO    | KIGERO | nzabandubakade | 795434673 |
+| 2147483647 | ZAKAYO       | Nyenye   | WESTERN  | RUSIZI    | BUGARAMA  | GITISI | zakayonyenye@g | 787345673 |
+| 2147483647 | MAFI         | Nicos    | NOTHERN  | BURERA    | GACUBI    | MUTIBA | mafinicos@gmai | 798034673 |
++------------+--------------+----------+----------+-----------+-----------+--------+----------------+-----------+
+4 rows in set (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('1943468343598932','CARIGUFI','Vicky','KIGALCITY','GASABO','KIMIRONKO','NYAGATOVU','carigufivi@gmail.com','0787615673');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('1933468343598932','UWIMANA','Dona','KIGALCITY','NYARUGENGE','KIMISAGARA','KAMUHOZA','uwimanadona@gmail.com','0787617643');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('1923468343598932','UWERA','Carine','SOUTHERN','KAMONYI','RUNDA','GIHARA','uweracarine@gmail.com','0734617643');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('1913468343598932','MURANGIRA','Jean','SOUTHERN','RUHANGO','KINAZI','BWERAMVURA','murangiraj@gmail.com','0726617643');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('1990468343598932','SANO','FISTON','SOUTHERN','NYANZA','RUSATIRA','IGORORA','sanofiston@gmail.com','0726017643');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> INSERT INTO NGOMA VALUES('1997618343598932','IKIREZI','DENYSE','EASTERN','GATSIBO','TABAGWE','MUHENO','kirezidenyse@gmail.com','0799375444');
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+mysql> select *from NGOMA;
++------------+--------------+----------+-----------+------------+------------+------------+----------------+-----------+
+| ID         | FNAME        | LNAME    | PROVINCE  | DISTRICT   | SECTOR     | CELL       | EMAIL          | TELEPHONE |
++------------+--------------+----------+-----------+------------+------------+------------+----------------+-----------+
+| 2147483647 | UWERA        | Venancie | EASTERN   | NYAGATARE  | KARANGAZI  | GURAYO     | uweraven@gmail | 789945673 |
+| 2147483647 | NZABANDUBAKA | Dendo    | NOTHERN   | MUSANZE    | GUTERO     | KIGERO     | nzabandubakade | 795434673 |
+| 2147483647 | ZAKAYO       | Nyenye   | WESTERN   | RUSIZI     | BUGARAMA   | GITISI     | zakayonyenye@g | 787345673 |
+| 2147483647 | MAFI         | Nicos    | NOTHERN   | BURERA     | GACUBI     | MUTIBA     | mafinicos@gmai | 798034673 |
+| 2147483647 | CARIGUFI     | Vicky    | KIGALCITY | GASABO     | KIMIRONKO  | NYAGATOVU  | carigufivi@gma | 787615673 |
+| 2147483647 | UWIMANA      | Dona     | KIGALCITY | NYARUGENGE | KIMISAGARA | KAMUHOZA   | uwimanadona@gm | 787617643 |
+| 2147483647 | UWERA        | Carine   | SOUTHERN  | KAMONYI    | RUNDA      | GIHARA     | uweracarine@gm | 734617643 |
+| 2147483647 | MURANGIRA    | Jean     | SOUTHERN  | RUHANGO    | KINAZI     | BWERAMVURA | murangiraj@gma | 726617643 |
+| 2147483647 | SANO         | FISTON   | SOUTHERN  | NYANZA     | RUSATIRA   | IGORORA    | sanofiston@gma | 726017643 |
+| 2147483647 | IKIREZI      | DENYSE   | EASTERN   | GATSIBO    | TABAGWE    | MUHENO     | kirezidenyse@g | 799375444 |
++------------+--------------+----------+-----------+------------+------------+------------+----------------+-----------+
+10 rows in set (0.00 sec)
+
+mysql> ALTER TABLE NGOMA ADD GENDER CHAR(4);
+Query OK, 10 rows affected (0.05 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> UPDATE TABLE NGOMA SET GENDER='F' WHERE FNAME='UWERA';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TABLE NGOMA SET GENDER='F' WHERE FNAME='UWERA'' at line 1
+mysql> UPDATE  NGOMA SET GENDER='F' WHERE FNAME='UWERA';
+Query OK, 2 rows affected (0.00 sec)
+Rows matched: 2  Changed: 2  Warnings: 0
+
+mysql> select *from NGOMA;
++------------+--------------+----------+-----------+------------+------------+------------+----------------+-----------+--------+
+| ID         | FNAME        | LNAME    | PROVINCE  | DISTRICT   | SECTOR     | CELL       | EMAIL          | TELEPHONE | GENDER |
++------------+--------------+----------+-----------+------------+------------+------------+----------------+-----------+--------+
+| 2147483647 | UWERA        | Venancie | EASTERN   | NYAGATARE  | KARANGAZI  | GURAYO     | uweraven@gmail | 789945673 | F      |
+| 2147483647 | NZABANDUBAKA | Dendo    | NOTHERN   | MUSANZE    | GUTERO     | KIGERO     | nzabandubakade | 795434673 | NULL   |
+| 2147483647 | ZAKAYO       | Nyenye   | WESTERN   | RUSIZI     | BUGARAMA   | GITISI     | zakayonyenye@g | 787345673 | NULL   |
+| 2147483647 | MAFI         | Nicos    | NOTHERN   | BURERA     | GACUBI     | MUTIBA     | mafinicos@gmai | 798034673 | NULL   |
+| 2147483647 | CARIGUFI     | Vicky    | KIGALCITY | GASABO     | KIMIRONKO  | NYAGATOVU  | carigufivi@gma | 787615673 | NULL   |
+| 2147483647 | UWIMANA      | Dona     | KIGALCITY | NYARUGENGE | KIMISAGARA | KAMUHOZA   | uwimanadona@gm | 787617643 | NULL   |
+| 2147483647 | UWERA        | Carine   | SOUTHERN  | KAMONYI    | RUNDA      | GIHARA     | uweracarine@gm | 734617643 | F      |
+| 2147483647 | MURANGIRA    | Jean     | SOUTHERN  | RUHANGO    | KINAZI     | BWERAMVURA | murangiraj@gma | 726617643 | NULL   |
+| 2147483647 | SANO         | FISTON   | SOUTHERN  | NYANZA     | RUSATIRA   | IGORORA    | sanofiston@gma | 726017643 | NULL   |
+| 2147483647 | IKIREZI      | DENYSE   | EASTERN   | GATSIBO    | TABAGWE    | MUHENO     | kirezidenyse@g | 799375444 | NULL   |
++------------+--------------+----------+-----------+------------+------------+------------+----------------+-----------+--------+
+10 rows in set (0.00 sec)
+
+mysql> UPDATE TABLE NGOMA SET GENDER='F' WHERE FNAME='NZABANDUBAKA';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TABLE NGOMA SET GENDER='F' WHERE FNAME='NZABANDUBAKA'' at line 1
+mysql> UPDATE  NGOMA SET GENDER='F' WHERE FNAME='NZABANDUBAKA';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE  NGOMA SET GENDER='F' WHERE FNAME='ZAKAYO';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE  NGOMA SET GENDER='M' WHERE FNAME='MAFI';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE  NGOMA SET GENDER='M' WHERE FNAME='CARIGUFI';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE  NGOMA SET GENDER='F' WHERE FNAME='UWIMANA';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE  NGOMA SET GENDER='M' WHERE FNAME='MURANGIRA';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE  NGOMA SET GENDER='M' WHERE FNAME='SANO';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE  NGOMA SET GENDER='F' WHERE FNAME='IKIREZI';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select *from NGOMA;
++------------+--------------+----------+-----------+------------+------------+------------+----------------+-----------+--------+
+| ID         | FNAME        | LNAME    | PROVINCE  | DISTRICT   | SECTOR     | CELL       | EMAIL          | TELEPHONE | GENDER |
++------------+--------------+----------+-----------+------------+------------+------------+----------------+-----------+--------+
+| 2147483647 | UWERA        | Venancie | EASTERN   | NYAGATARE  | KARANGAZI  | GURAYO     | uweraven@gmail | 789945673 | F      |
+| 2147483647 | NZABANDUBAKA | Dendo    | NOTHERN   | MUSANZE    | GUTERO     | KIGERO     | nzabandubakade | 795434673 | F      |
+| 2147483647 | ZAKAYO       | Nyenye   | WESTERN   | RUSIZI     | BUGARAMA   | GITISI     | zakayonyenye@g | 787345673 | F      |
+| 2147483647 | MAFI         | Nicos    | NOTHERN   | BURERA     | GACUBI     | MUTIBA     | mafinicos@gmai | 798034673 | M      |
+| 2147483647 | CARIGUFI     | Vicky    | KIGALCITY | GASABO     | KIMIRONKO  | NYAGATOVU  | carigufivi@gma | 787615673 | M      |
+| 2147483647 | UWIMANA      | Dona     | KIGALCITY | NYARUGENGE | KIMISAGARA | KAMUHOZA   | uwimanadona@gm | 787617643 | F      |
+| 2147483647 | UWERA        | Carine   | SOUTHERN  | KAMONYI    | RUNDA      | GIHARA     | uweracarine@gm | 734617643 | F      |
+| 2147483647 | MURANGIRA    | Jean     | SOUTHERN  | RUHANGO    | KINAZI     | BWERAMVURA | murangiraj@gma | 726617643 | M      |
+| 2147483647 | SANO         | FISTON   | SOUTHERN  | NYANZA     | RUSATIRA   | IGORORA    | sanofiston@gma | 726017643 | M      |
+| 2147483647 | IKIREZI      | DENYSE   | EASTERN   | GATSIBO    | TABAGWE    | MUHENO     | kirezidenyse@g | 799375444 | F      |
++------------+--------------+----------+-----------+------------+------------+------------+----------------+-----------+--------+
+10 rows in set (0.00 sec)
+
+mysql> ALTER TABLE NGOMA DROP 'CELL';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CELL'' at line 1
+mysql> ALTER TABLE NGOMA DROP CELL;
+Query OK, 10 rows affected (0.05 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> select *from NGOMA;
++------------+--------------+----------+-----------+------------+------------+----------------+-----------+--------+
+| ID         | FNAME        | LNAME    | PROVINCE  | DISTRICT   | SECTOR     | EMAIL          | TELEPHONE | GENDER |
++------------+--------------+----------+-----------+------------+------------+----------------+-----------+--------+
+| 2147483647 | UWERA        | Venancie | EASTERN   | NYAGATARE  | KARANGAZI  | uweraven@gmail | 789945673 | F      |
+| 2147483647 | NZABANDUBAKA | Dendo    | NOTHERN   | MUSANZE    | GUTERO     | nzabandubakade | 795434673 | F      |
+| 2147483647 | ZAKAYO       | Nyenye   | WESTERN   | RUSIZI     | BUGARAMA   | zakayonyenye@g | 787345673 | F      |
+| 2147483647 | MAFI         | Nicos    | NOTHERN   | BURERA     | GACUBI     | mafinicos@gmai | 798034673 | M      |
+| 2147483647 | CARIGUFI     | Vicky    | KIGALCITY | GASABO     | KIMIRONKO  | carigufivi@gma | 787615673 | M      |
+| 2147483647 | UWIMANA      | Dona     | KIGALCITY | NYARUGENGE | KIMISAGARA | uwimanadona@gm | 787617643 | F      |
+| 2147483647 | UWERA        | Carine   | SOUTHERN  | KAMONYI    | RUNDA      | uweracarine@gm | 734617643 | F      |
+| 2147483647 | MURANGIRA    | Jean     | SOUTHERN  | RUHANGO    | KINAZI     | murangiraj@gma | 726617643 | M      |
+| 2147483647 | SANO         | FISTON   | SOUTHERN  | NYANZA     | RUSATIRA   | sanofiston@gma | 726017643 | M      |
+| 2147483647 | IKIREZI      | DENYSE   | EASTERN   | GATSIBO    | TABAGWE    | kirezidenyse@g | 799375444 | F      |
++------------+--------------+----------+-----------+------------+------------+----------------+-----------+--------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT LNAME,EMAIL FROM NGOMA;
++----------+----------------+
+| LNAME    | EMAIL          |
++----------+----------------+
+| Venancie | uweraven@gmail |
+| Dendo    | nzabandubakade |
+| Nyenye   | zakayonyenye@g |
+| Nicos    | mafinicos@gmai |
+| Vicky    | carigufivi@gma |
+| Dona     | uwimanadona@gm |
+| Carine   | uweracarine@gm |
+| Jean     | murangiraj@gma |
+| FISTON   | sanofiston@gma |
+| DENYSE   | kirezidenyse@g |
++----------+----------------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT *FROM NGOMA WHERE PROVINCE='EASTERN' OR GENDER='F';
++------------+--------------+----------+-----------+------------+------------+----------------+-----------+--------+
+| ID         | FNAME        | LNAME    | PROVINCE  | DISTRICT   | SECTOR     | EMAIL          | TELEPHONE | GENDER |
++------------+--------------+----------+-----------+------------+------------+----------------+-----------+--------+
+| 2147483647 | UWERA        | Venancie | EASTERN   | NYAGATARE  | KARANGAZI  | uweraven@gmail | 789945673 | F      |
+| 2147483647 | NZABANDUBAKA | Dendo    | NOTHERN   | MUSANZE    | GUTERO     | nzabandubakade | 795434673 | F      |
+| 2147483647 | ZAKAYO       | Nyenye   | WESTERN   | RUSIZI     | BUGARAMA   | zakayonyenye@g | 787345673 | F      |
+| 2147483647 | UWIMANA      | Dona     | KIGALCITY | NYARUGENGE | KIMISAGARA | uwimanadona@gm | 787617643 | F      |
+| 2147483647 | UWERA        | Carine   | SOUTHERN  | KAMONYI    | RUNDA      | uweracarine@gm | 734617643 | F      |
+| 2147483647 | IKIREZI      | DENYSE   | EASTERN   | GATSIBO    | TABAGWE    | kirezidenyse@g | 799375444 | F      |
++------------+--------------+----------+-----------+------------+------------+----------------+-----------+--------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT *FROM NGOMA WHERE PROVINCE='EASTERN' AND GENDER='F';
++------------+---------+----------+----------+-----------+-----------+----------------+-----------+--------+
+| ID         | FNAME   | LNAME    | PROVINCE | DISTRICT  | SECTOR    | EMAIL          | TELEPHONE | GENDER |
++------------+---------+----------+----------+-----------+-----------+----------------+-----------+--------+
+| 2147483647 | UWERA   | Venancie | EASTERN  | NYAGATARE | KARANGAZI | uweraven@gmail | 789945673 | F      |
+| 2147483647 | IKIREZI | DENYSE   | EASTERN  | GATSIBO   | TABAGWE   | kirezidenyse@g | 799375444 | F      |
++------------+---------+----------+----------+-----------+-----------+----------------+-----------+--------+
+2 rows in set (0.00 sec)
+
+mysql>
